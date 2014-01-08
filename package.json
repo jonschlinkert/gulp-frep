@@ -1,0 +1,46 @@
+{
+  "name": "gulp-frep",
+  "description": "A find and replace utility, using Frep. Replace strings or arrays of strings with an array of replacement patterns.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/gulp-frep",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonschlinkert/gulp-frep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/gulp-frep/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/gulp-frep/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "frep": "~0.1.2"
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "event-stream": "~3.0.20",
+    "gulp": "~3.1.4",
+    "mocha": "~1.16.1"
+  },
+  "keywords": [
+    "beautify",
+    "find",
+    "replace",
+    "gulp",
+    "gulpplugin",
+    "search",
+    "match",
+    "find and replace"
+  ]
+}
