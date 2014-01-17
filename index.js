@@ -20,7 +20,7 @@ module.exports = function (opts) {
     try {
       file.contents = new Buffer(frep.strWithArr(String(file.contents), opts));
     } catch (err) {
-      console.warn('Error caught from js-beautify: ' + err.message + '.');
+      console.warn('Error caught from frep: ' + err.message + '.');
     }
     cb(null, file);
   });
