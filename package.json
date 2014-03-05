@@ -1,7 +1,7 @@
 {
   "name": "gulp-frep",
   "description": "A find and replace utility, using Frep. Replace strings or arrays of strings with an array of replacement patterns.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/gulp-frep",
   "author": {
     "name": "Jon Schlinkert",
@@ -25,11 +25,11 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "frep": "~0.1.2"
+    "frep": "~0.1.2",
+    "event-stream": "~3.0.20"
   },
   "devDependencies": {
     "chai": "~1.8.1",
-    "event-stream": "~3.0.20",
     "gulp": "~3.1.4",
     "mocha": "~1.16.1"
   },

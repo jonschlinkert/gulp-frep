@@ -26,6 +26,7 @@ var findReplace = require('frep');
 var read = function(src) {
   return require('fs').readFileSync(src, 'utf-8');
 };
+
 var opts = {
   patterns: [
     {
@@ -48,7 +49,6 @@ var opts = {
     }
   ]
 };
-
 
 describe('find and replace HTML', function () {
   describe('gulp-frep', function () {
