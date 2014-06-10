@@ -18,7 +18,11 @@ module.exports = function (opts) {
 
   return es.map(function (file, cb) {
     try {
-      file.contents = new Buffer(frep.strWithArr(String(file.contents), opts));
+      if (Array.isArray(opts)) {
+        file.contents = new Buffer(frep.strWithArr(String(file.contents), opts));
+      } else {
+        file.contents = new Buffer(frep.strWithObj(String(file.contents), opts));
+      }
     } catch (err) {
       console.warn('Error caught from frep: ' + err.message + '.');
     }
