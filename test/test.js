@@ -38,6 +38,10 @@ var opts = {
       replacement: ''
     }
   ],
+  patterns_as_object: {
+    'banner': '',
+    'container': ''
+  },
   strip: [
     {
       pattern: /(<([^>]+)>)/ig,
@@ -59,6 +63,16 @@ describe('find and replace HTML', function () {
         .pipe(frep(opts.patterns))
         .pipe(es.map(function (file) {
           var expected = findReplace.strWithArr(read(filename), opts.patterns);
+          expect(String(file.contents)).to.equal(expected);
+          done();
+        }));
+    });
+    it('should replace strings with object replacement patterns', function (done) {
+      var filename = path.join(__dirname, './fixtures/index.html');
+      gulp.src(filename)
+        .pipe(frep(opts.patterns_as_object))
+        .pipe(es.map(function (file) {
+          var expected = findReplace.strWithObj(read(filename), opts.patterns_as_object);
           expect(String(file.contents)).to.equal(expected);
           done();
         }));
