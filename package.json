@@ -25,7 +25,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "frep": "~0.1.2",
+    "frep": "~0.2.2",
     "event-stream": "~3.0.20"
   },
   "devDependencies": {
